@@ -1,0 +1,11 @@
+extends layout
+ 
+ 
+block content
+  if user.name
+    h1 #{user.name} Avatar
+  else 
+    p.description.
+      User has no name,
+      why not add one...
+  img(src=user.avatar_url alt=`${user.login} avatar`)

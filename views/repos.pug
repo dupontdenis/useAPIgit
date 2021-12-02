@@ -1,0 +1,12 @@
+extends layout
+ 
+mixin list-ord
+    ul 
+    each repo in repos
+        li= repo.name
+ 
+block content
+    h1 repositories 
+    +list-ord
+
+  

@@ -1,18 +1,39 @@
 {
-  "name": "express-demo",
+  "name": "useapigit",
   "version": "1.0.0",
-  "description": "",
+  "description": "Express app that fetches GitHub user info with Octokit and renders with Pug.",
+  "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"No tests yet\" && exit 0"
   },
-  "keywords": [],
+  "keywords": [
+    "express",
+    "octokit",
+    "github",
+    "pug"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dupontdenis/useAPIgit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dupontdenis/useAPIgit/issues"
+  },
+  "homepage": "https://github.com/dupontdenis/useAPIgit#readme",
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
-    "@octokit/core": "^3.5.1",
     "debug": "^4.3.2",
     "express": "^4.17.1",
     "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }

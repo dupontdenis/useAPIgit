@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Express app that fetches GitHub user info with native fetch and renders with Pug.",
   "private": true,
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

@@ -1,0 +1,11 @@
+<% if (user.name) { %>
+  <h1>
+    <%= user.name %> Avatar
+  </h1>
+  <% } else { %>
+    <p class="description">
+      User has no name,
+      why not add one...
+    </p>
+    <% } %>
+      <img src="<%= user.avatar_url %>" alt="<%= user.login %> avatar">
